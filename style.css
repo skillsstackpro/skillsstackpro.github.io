@@ -344,7 +344,7 @@ body{
   font-size: 1rem;
 }
 
-.contact-links a {
+/* .contact-links a {
   color: var(--primary);
   text-decoration: none;
   font-weight: 500;
@@ -353,8 +353,27 @@ body{
 
 .contact-links a:hover {
   color: var(--primary);
+} */
+ .contact-links a {
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
+.contact-links a:hover {
+  color: var(--primary); /* Color change hoga */
+  transform: translateX(5px); /* Link thora sa right side par move karega */
+  font-weight: 600; /* Text thora bold ho jayega */
+}
+
+.btn-submit {
+  transition: all 0.3s ease; 
+}
+.btn-submit:hover {
+  background-color: #0b1d3a; 
+  transform: translateY(-3px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+}
 
 
 
